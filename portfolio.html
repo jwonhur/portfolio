@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ::before,
+        ::after {
+            box-sizing: border-box;
+        }
+        #outter-box {
+            min-width: 1800px;
+            border: 3px solid black;
+        }
+        #outter-box::after {
+            min-width: 1800px;
+            border: 3px solid black;
+            clear: both;
+        }
+        #right-box {
+            border: 2px solid red;
+            width: 1400px;
+            float: right;
+        }
+        #left-box {
+            background-color: #00457A;
+            width: 400px;
+            width: 400px;
+            float: left;
+        }
+
+        li {
+            text-align: center;
+        }
+
+        #portfolio-img-box {
+            margin: 30px 15px;
+            height: 450px;
+            width: 350px;
+            overflow: hidden;
+            border-radius: 50%;
+            /* border: 1px solid greenyellow; */
+        }
+
+        #portfolio-img {
+
+        }
+
+    </style>
+</head>
+<body id="page-top">
+    <div class="box" id="outter-box">
+        <div class="box" id="left-box">
+            <div class="box" id="portfolio-img-box">
+                <img src="/assets/img/portfolio-pic1.jpg" id="portfolio-img">
+            </div>
+            <ul>
+                <li>자기소개</li>
+                <li>학력</li>
+                <li>이력 & 교육 이력</li>
+                <li>스킬</li>
+                <li>연락처</li>
+                <li>프로젝트</li>
+            </ul>
+        </div>
+        <div class="box" id="right-box">
+            <ul>
+                <li>자기소개</li>
+                <li>학력</li>
+                <li>이력 & 교육 이력</li>
+                <li>스킬</li>
+                <li>연락처</li>
+                <li>프로젝트</li>
+            </ul>
+        </div>      
+    </div>
+    
+</body>
+</html>
